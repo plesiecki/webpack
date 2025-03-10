@@ -11,7 +11,7 @@ module.exports = {
 
 			const resolve = getResolve();
 			const resolved = await resolve(context, request);
-			return `var ${JSON.stringify(resolved)}`;
+			return `var ${JSON.stringify(resolved.relativePath)}`;
 		}
 	]
 };
